@@ -33,7 +33,6 @@ Each lesson contains my own:
 - Machine, assembly and high-level languages
 - Assemblers, compilers and interpreters
 - Object-oriented programming concepts
-- Python programming
 - Program-development steps
 - Algorithms and pseudocode
 - Flowcharts and decision tables
@@ -44,7 +43,7 @@ Each lesson contains my own:
 ### Practical Activity
 
 For Lesson 1, I designed and implemented a beginner Python program
-that calculates a discount based on an entered quantity.
+that calculates a discount based on an entered order quantity.
 
 The practical work includes:
 
@@ -56,6 +55,8 @@ The practical work includes:
 - Writing and documenting Python code
 - Using input, processing and output
 - Using conditional statements
+- Validating user input
+- Creating and testing sample cases
 
 [View Lesson 1 work](lesson-01-programming-language-basics)
 
@@ -69,6 +70,7 @@ The practical work includes:
 - Flowchart design
 - Decision tables
 - Visual Studio Code
+- Testing and debugging
 - Technical documentation
 - GitHub
 
