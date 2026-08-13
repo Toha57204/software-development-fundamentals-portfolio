@@ -1,313 +1,119 @@
-# Lecture 02 - Python Variables and Data Types
+# Lecture 02 - Data Types, Variables, Operators and Expressions
 
-**Course:** ITAP1001  
-**Topic:** Python Programming Fundamentals
+**Course:** ITAP1001 - Software Development Fundamentals  
+**Lesson:** 2
 
 ## Topics Covered
 
+- Data Types
 - Variables
-- Strings
+- Literals
+- Expressions
+- Mathematical Operators
+- Comparison Operators
+- Logical Operators
+- Operator Precedence
+- Type Conversion
+- Python Math Library
+- Built-in Methods and Libraries
+
+## What I Learned
+
+In this lesson, I learned how Python stores and interprets different types of data.
+
+I practised working with:
+
 - Integers
-- Assignment operator
-- Multiplication operator
-- String repetition
-- `print()` function
-- Understanding Python output
+- Floating-point numbers
+- Strings
+- Boolean values
+- Variables
+- Mathematical expressions
+- Comparison expressions
+- Logical expressions
 
----
-
-## 1. Variables
-
-A variable is used to store a value.
+I also learned how Python determines a variable's data type from the value assigned to it.
 
 Example:
 
 ```python
-x = "5"
-y = 2
+name = "xyz"
+weight = 62.8
+height = 168
 ```
 
 Here:
 
-- `x` stores `"5"`
-- `y` stores `2`
+- `name` is text
+- `weight` is a floating-point value
+- `height` is an integer
 
-The `=` symbol is the assignment operator.
+I also learned how to use operators such as:
 
----
+```text
++  -  *  /  %
+```
 
-## 2. Strings
+and comparison operators such as:
 
-A string is text placed inside quotation marks.
+```text
+<  <=  ==  >  >=  !=
+```
+
+Logical operators introduced in this lesson were:
+
+```python
+and
+or
+not
+```
+
+The lesson also introduced Python's `math` library.
 
 Example:
 
 ```python
-x = "5"
+import math
+
+root = math.sqrt(25)
+power = math.pow(2, 3)
 ```
 
-Even though `5` looks like a number, `"5"` is a string because it is inside quotation marks.
+## Files
 
-Therefore:
+- `lecture-notes.md` - Notes from Lecture 2
+- `practical-exercise-02.md` - Practice exercises based on Lesson 2
 
-```python
-"5"
-```
+## Key Concepts
 
-is different from:
-
-```python
-5
-```
-
----
-
-## 3. Integers
-
-An integer is a whole number without quotation marks.
-
-Example:
-
-```python
-y = 2
-```
-
-Here, `2` is an integer.
-
----
-
-## 4. String vs Integer
-
-Python treats strings and integers differently.
-
-For example:
-
-```python
-5 * 2
-```
-
-Result:
-
-```text
-10
-```
-
-But:
-
-```python
-"5" * 2
-```
-
-Result:
-
-```text
-55
-```
-
-This happens because `"5"` is a string.
-
----
-
-## 5. Multiplication Operator
-
-The multiplication operator in Python is:
-
-```text
-*
-```
-
-With numbers, it performs normal multiplication.
-
-Example:
-
-```python
-print(5 * 2)
-```
-
-Output:
-
-```text
-10
-```
-
----
-
-## 6. String Repetition
-
-When a string is multiplied by an integer, Python repeats the string.
-
-Example:
-
-```python
-print("5" * 2)
-```
-
-Output:
-
-```text
-55
-```
-
-Another example:
-
-```python
-print("Hello" * 3)
-```
-
-Output:
-
-```text
-HelloHelloHello
-```
-
----
-
-## 7. Lesson Example
-
-The code practised in this lesson was:
-
-```python
-x = "5"
-
-y = 2
-
-print(x * y)
-```
-
-### Step 1
-
-```python
-x = "5"
-```
-
-`x` contains the string `"5"`.
-
-### Step 2
-
-```python
-y = 2
-```
-
-`y` contains the integer `2`.
-
-### Step 3
-
-Python evaluates:
-
-```python
-x * y
-```
-
-which becomes:
-
-```python
-"5" * 2
-```
-
-Because `"5"` is a string, Python repeats it twice.
-
-Result:
-
-```text
-55
-```
-
-### Step 4
-
-```python
-print(x * y)
-```
-
-displays:
-
-```text
-55
-```
-
----
-
-## 8. print() Function
-
-The `print()` function displays output.
-
-Example:
-
-```python
-print("Hello")
-```
-
-Output:
-
-```text
-Hello
-```
-
-It can also print the result of an expression:
-
-```python
-print("5" * 2)
-```
-
-Output:
-
-```text
-55
-```
-
----
-
-## Quick Reference
-
-| Code | Meaning |
+| Concept | Example |
 |---|---|
-| `x = "5"` | Store string `"5"` |
-| `y = 2` | Store integer `2` |
-| `"5"` | String |
-| `5` | Integer |
-| `=` | Assignment |
-| `*` | Multiplication / repetition |
-| `print()` | Display output |
-| `"5" * 2` | `55` |
-| `5 * 2` | `10` |
-
----
-
-## Key Takeaway
-
-Data types matter in Python.
-
-```python
-5 * 2
-```
-
-produces:
-
-```text
-10
-```
-
-while:
-
-```python
-"5" * 2
-```
-
-produces:
-
-```text
-55
-```
-
-because `"5"` is a string rather than an integer.
+| Integer | `10` |
+| Float | `10.5` |
+| String | `"VIT"` |
+| Boolean | `True` |
+| Variable | `score = 75` |
+| Integer conversion | `int(68.2)` |
+| Addition | `x + y` |
+| Multiplication | `x * y` |
+| Division | `x / y` |
+| Remainder | `x % y` |
+| Equal to | `x == y` |
+| Greater than | `x > y` |
+| Logical AND | `x and y` |
+| Logical OR | `x or y` |
+| Logical NOT | `not x` |
+| Math library | `import math` |
 
 ## Learning Progress
 
+✅ Data Types  
 ✅ Variables  
-✅ Strings  
-✅ Integers  
-✅ Assignment operator  
-✅ Multiplication operator  
-✅ String repetition  
-✅ Python output
-
-print(x * y)
+✅ Literals  
+✅ Expressions  
+✅ Mathematical Operators  
+✅ Comparison Operators  
+✅ Logical Operators  
+✅ Operator Precedence  
+✅ Type Conversion  
+✅ Python Math Library
