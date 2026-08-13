@@ -4,9 +4,7 @@
 
 A data type tells the computer how a value should be interpreted and used.
 
-Different types of data can represent different kinds of information.
-
-Common data types discussed in this lesson include:
+Types covered in this lesson include:
 
 - Integer
 - Floating-point
@@ -17,11 +15,11 @@ Common data types discussed in this lesson include:
 - String
 - Byte
 
-Python determines the type of a value from the value that is assigned.
+Python determines the type of a value from the value assigned to it.
 
 ---
 
-# 2. Integer
+## 2. Integer
 
 Integers are whole numbers with no fractional part.
 
@@ -36,7 +34,7 @@ Examples:
 -45
 ```
 
-These are not integers:
+Not integers:
 
 ```text
 5.49
@@ -44,17 +42,13 @@ These are not integers:
 88.0
 ```
 
-Integers are useful for:
-
-- Counts
-- Indexes
-- Exact whole-number values
+Integers are useful for counts, indexes and exact whole-number values.
 
 ---
 
-# 3. Floating-Point Numbers
+## 3. Floating-Point Numbers
 
-Floating-point numbers represent numbers containing a decimal point or fractional part.
+Floating-point numbers represent values containing a decimal point or fractional part.
 
 Examples:
 
@@ -65,35 +59,31 @@ Examples:
 45.1
 ```
 
-Python uses floating-point values when a decimal value is required.
-
 ---
 
-# 4. Double Precision
+## 4. Double Precision
 
 Double precision provides:
 
 - More range
 - More precision
-- Greater memory usage
+- More memory usage
 
-It is useful when calculations require larger values or greater accuracy.
+It is useful when calculations require greater accuracy.
 
-Typical double-precision values provide around 15–16 significant digits.
+The lesson describes typical double precision as about 15–16 significant digits.
 
 ---
 
-# 5. Decimal Precision
+## 5. Decimal Precision
 
 Decimal values are useful when exact decimal behaviour is important.
 
 A common example is financial calculations.
 
-Decimal values can provide high precision for calculations where significant digits matter.
-
 ---
 
-# 6. Characters
+## 6. Characters
 
 A character represents one symbol.
 
@@ -107,26 +97,26 @@ Examples:
 '\n'
 ```
 
-Special character sequences such as:
+Escape sequences such as:
 
 ```text
 \n
 ```
 
-can represent special characters such as a new line.
+represent special characters.
 
 ---
 
-# 7. Boolean Values
+## 7. Boolean Values
 
-Boolean values represent:
+Boolean values are:
 
 ```python
 True
 False
 ```
 
-They are commonly used to represent the result of a condition.
+They are commonly produced by conditions.
 
 Examples:
 
@@ -135,21 +125,11 @@ a > b
 a == 1
 ```
 
-These expressions return either:
-
-```python
-True
-```
-
-or:
-
-```python
-False
-```
+A comparison produces either `True` or `False`.
 
 ---
 
-# 8. Strings
+## 8. Strings
 
 Strings store text as a sequence of characters.
 
@@ -161,17 +141,11 @@ Examples:
 "89.324"
 ```
 
-Even though:
-
-```python
-"89.324"
-```
-
-contains numbers, quotation marks make it text.
+Even though `"89.324"` contains digits, it is still text because it is inside quotation marks.
 
 ---
 
-# 9. Byte Values
+## 9. Byte Values
 
 The lesson describes byte values as ranging from:
 
@@ -179,7 +153,7 @@ The lesson describes byte values as ranging from:
 0 to 255
 ```
 
-Valid examples:
+Valid:
 
 ```text
 10
@@ -187,7 +161,7 @@ Valid examples:
 255
 ```
 
-Invalid examples:
+Invalid:
 
 ```text
 -1
@@ -197,9 +171,9 @@ Invalid examples:
 
 ---
 
-# 10. Variables
+## 10. Variables
 
-A variable gives a readable name to a stored value.
+A variable gives a readable name to a value stored in memory.
 
 Example:
 
@@ -207,28 +181,28 @@ Example:
 monthly_salary = 25
 ```
 
-The variable name refers to the value stored in memory.
-
-Using meaningful variable names makes programs easier to understand.
+Meaningful variable names make programs easier to understand.
 
 ---
 
-# 11. Variable Naming Rules
+## 11. Variable Naming Rules
 
-Python variable names should:
+A Python variable should:
 
 1. Start with a letter or underscore
-2. Contain letters, digits or underscores
+2. Use letters, numbers and underscores
 3. Not contain spaces
 4. Not contain periods
 5. Not use Python reserved words
 
-Good examples:
+Valid examples:
 
 ```python
-student_name
-score2
-total
+donald
+donald_trump
+integer
+times7
+street_forty_three
 ```
 
 Invalid examples:
@@ -255,9 +229,9 @@ are different variable names.
 
 ---
 
-# 12. Assigning Values
+## 12. Assigning Values
 
-Python does not require a separate declaration before assigning a value.
+Python does not require a separate variable declaration.
 
 Example:
 
@@ -267,21 +241,17 @@ weight = 62.8
 height = 168
 ```
 
-Python infers the data type from the assigned value.
+Python infers the type from the assigned value.
 
-Here:
-
-```text
-name   → string
-weight → floating-point
-height → integer
-```
+- `name` → string
+- `weight` → float
+- `height` → integer
 
 ---
 
-# 13. Converting Values to Integers
+## 13. Converting to Integer
 
-The `int()` function converts a value to an integer.
+Use `int()` when you intentionally want an integer value.
 
 Example:
 
@@ -297,13 +267,13 @@ Results:
 175
 ```
 
-The decimal portion is removed.
+The fractional part is removed.
 
-The conversion truncates the fractional part rather than rounding it.
+The conversion truncates rather than rounds.
 
 ---
 
-# 14. Expressions
+## 14. Expressions
 
 An expression combines operands and operators to produce a result.
 
@@ -319,9 +289,7 @@ Result:
 72
 ```
 
-Variables can also be used as operands.
-
-Example:
+Variables can also be used as operands:
 
 ```python
 x = 8 * y
@@ -331,11 +299,9 @@ x = x + 1
 
 ---
 
-# 15. Types of Expressions
+## 15. Kinds of Expressions
 
-Three important types of expressions are:
-
-## Mathematical Expression
+### Mathematical
 
 Used to calculate a value.
 
@@ -343,7 +309,7 @@ Used to calculate a value.
 8 * 9
 ```
 
-## Comparison Expression
+### Comparison
 
 Used to test a relationship.
 
@@ -351,7 +317,7 @@ Used to test a relationship.
 x > y
 ```
 
-## Logical Expression
+### Logical
 
 Used to combine conditions.
 
@@ -361,9 +327,7 @@ ready and paid
 
 ---
 
-# 16. Mathematical Operators
-
-Python mathematical operators include:
+## 16. Mathematical Operators
 
 | Operator | Meaning |
 |---|---|
@@ -376,16 +340,16 @@ Python mathematical operators include:
 Examples:
 
 ```python
-5 + 2
-5 - 2
-5 * 2
-5 / 2
-5 % 2
+10 + 5
+10 - 5
+10 * 5
+10 / 5
+10 % 3
 ```
 
 ---
 
-# 17. Division
+## 17. Division
 
 The division operator is:
 
@@ -405,11 +369,9 @@ Result:
 2.5
 ```
 
-Division produces a quotient.
-
 ---
 
-# 18. Remainder Operator
+## 18. Remainder
 
 The remainder operator is:
 
@@ -445,16 +407,9 @@ Result:
 
 ---
 
-# 19. Unary Operators
+## 19. Unary Operators
 
-Unary operators operate on one value.
-
-Examples:
-
-```text
-+
--
-```
+Unary operators work with one operand.
 
 Unary plus:
 
@@ -472,53 +427,38 @@ If no sign is written, a numeric value is positive by default.
 
 ---
 
-# 20. Increment and Decrement
+## 20. Increment and Decrement
 
-Python increases a value using:
+Increase a value by one:
 
 ```python
 count += 1
 ```
 
-This means:
+This is equivalent to:
 
 ```python
 count = count + 1
 ```
 
-Python decreases a value using:
+Decrease a value by one:
 
 ```python
 count -= 1
 ```
 
-This means:
-
-```python
-count = count - 1
-```
-
-Python does not normally use:
-
-```text
-++
---
-```
-
-like some other programming languages.
+Python uses `+= 1` and `-= 1` rather than the `++` and `--` notation used by some other languages.
 
 ---
 
-# 21. Operator Precedence
+## 21. Operator Precedence
 
-Operators are evaluated in a particular order.
-
-The lesson introduces this order:
+The lesson introduces this evaluation order:
 
 1. Parentheses
 2. Unary operations
-3. Multiplication, division and remainder
-4. Addition and subtraction
+3. `*`, `/`, `%`
+4. `+`, `-`
 
 Example:
 
@@ -544,9 +484,7 @@ Result:
 14
 ```
 
-Parentheses can change the order.
-
-Example:
+Using parentheses:
 
 ```python
 (2 + 3) * 4
@@ -562,9 +500,7 @@ Operators at the same level are evaluated from left to right.
 
 ---
 
-# 22. Comparison Operators
-
-Comparison operators test relationships.
+## 22. Comparison Operators
 
 | Operator | Meaning |
 |---|---|
@@ -575,7 +511,7 @@ Comparison operators test relationships.
 | `>=` | Greater than or equal to |
 | `!=` | Not equal to |
 
-Every comparison produces either:
+Every comparison evaluates to:
 
 ```python
 True
@@ -589,81 +525,53 @@ False
 
 ---
 
-# 23. Comparison Examples
-
-Suppose:
+## 23. Comparison Examples
 
 ```python
 A = 5
 B = 3
+
+print(A > B)
 ```
 
-Then:
+Output:
 
-```python
-A > B
-```
-
-Result:
-
-```python
+```text
 True
 ```
 
-If:
+Another example:
 
 ```python
 A = 5
 B = 7
+
+print(A > B)
 ```
 
-then:
+Output:
 
-```python
-A > B
-```
-
-Result:
-
-```python
+```text
 False
 ```
 
 ---
 
-# 24. Turning Questions into Comparisons
+## 24. Turning Questions into Comparisons
 
-Question:
-
-```text
 Is X bigger than Y?
-```
-
-Python:
 
 ```python
 X > Y
 ```
 
-Question:
-
-```text
 Is Y at least Z?
-```
-
-Python:
 
 ```python
 Y >= Z
 ```
 
-Question:
-
-```text
 Are X and Z the same?
-```
-
-Python:
 
 ```python
 X == Z
@@ -671,9 +579,9 @@ X == Z
 
 ---
 
-# 25. Logical Operators
+## 25. Logical Operators
 
-Python has three important logical operators:
+Python provides:
 
 ```python
 and
@@ -683,9 +591,9 @@ not
 
 ---
 
-# 26. Logical AND
+## 26. Logical AND
 
-The `and` operator requires both conditions to be `True`.
+Both conditions must be `True`.
 
 Example:
 
@@ -697,9 +605,9 @@ The result is `True` only when both conditions are true.
 
 ---
 
-# 27. Logical OR
+## 27. Logical OR
 
-The `or` operator requires at least one condition to be `True`.
+At least one condition must be `True`.
 
 Example:
 
@@ -707,15 +615,13 @@ Example:
 (farecard == "Yes") or (cash > 2)
 ```
 
-The result is `False` only when both conditions are false.
+The result is false only when both conditions are false.
 
 ---
 
-# 28. Logical NOT
+## 28. Logical NOT
 
-The `not` operator reverses a Boolean value.
-
-Example:
+`not` reverses a Boolean value.
 
 ```python
 not True
@@ -723,11 +629,9 @@ not True
 
 Result:
 
-```python
+```text
 False
 ```
-
-Example:
 
 ```python
 not False
@@ -735,17 +639,17 @@ not False
 
 Result:
 
-```python
+```text
 True
 ```
 
 ---
 
-# 29. Libraries and Methods
+## 29. Built-in Methods and Libraries
 
-Libraries organise reusable programming functionality.
+Libraries organise reusable programs and functionality.
 
-A general method call can be written as:
+A general method call can be represented as:
 
 ```text
 result = ClassName.method_name(argument1, argument2)
@@ -753,12 +657,12 @@ result = ClassName.method_name(argument1, argument2)
 
 Important parts include:
 
-- Class name
-- Method name
+- Class
+- Method
 - Arguments
 - Return value
 
-When calling a method, it is important to check:
+When calling a method, check:
 
 - Method name
 - Return type
@@ -768,9 +672,7 @@ When calling a method, it is important to check:
 
 ---
 
-# 30. Python Math Library
-
-Python provides the `math` module for mathematical operations.
+## 30. Python Math Library
 
 Import the library:
 
@@ -778,28 +680,28 @@ Import the library:
 import math
 ```
 
-Calculate a square root:
+Square root:
 
 ```python
 root = math.sqrt(25)
 ```
 
-Calculate a power:
+Power:
 
 ```python
 power = math.pow(2, 3)
 ```
 
-The `math` module provides reusable mathematical functions including:
+The `math` module provides reusable functions for:
 
 - Square roots
 - Powers
-- Trigonometric calculations
-- Other mathematical operations
+- Trigonometry
+- Other mathematical calculations
 
 ---
 
-# Example
+## Example Program
 
 ```python
 import math
@@ -807,10 +709,12 @@ import math
 name = "VIT"
 score = 75
 weight = 62.8
+height = 168
 
 print(name)
 print(score)
 print(weight)
+print(height)
 
 print(score > 50)
 
@@ -823,7 +727,7 @@ print(power)
 
 ---
 
-# Quick Reference
+## Quick Reference
 
 | Concept | Example |
 |---|---|
@@ -832,7 +736,7 @@ print(power)
 | String | `"VIT"` |
 | Boolean | `True` |
 | Variable | `score = 75` |
-| Integer conversion | `int(68.2)` |
+| Convert to integer | `int(68.2)` |
 | Addition | `x + y` |
 | Subtraction | `x - y` |
 | Multiplication | `x * y` |
@@ -842,23 +746,24 @@ print(power)
 | Not equal | `x != y` |
 | Greater than | `x > y` |
 | Less than | `x < y` |
-| Logical AND | `and` |
-| Logical OR | `or` |
-| Logical NOT | `not` |
-| Square root | `math.sqrt()` |
-| Power | `math.pow()` |
+| AND | `and` |
+| OR | `or` |
+| NOT | `not` |
+| Math library | `import math` |
+| Square root | `math.sqrt(25)` |
+| Power | `math.pow(2, 3)` |
 
 ---
 
-# Key Takeaways
+## Key Takeaways
 
 - Data types give values meaning.
 - Variables name and store values.
-- Python infers variable types from assigned values.
+- Python determines variable types from assigned values.
 - Expressions combine operands and operators.
 - Mathematical operators perform calculations.
 - Comparison operators return `True` or `False`.
 - Logical operators combine conditions.
-- Operator precedence controls calculation order.
+- Operator precedence determines calculation order.
 - Libraries provide reusable functionality.
-- Python's `math` module provides useful mathematical functions.
+- Python's `math` module provides mathematical functions.
